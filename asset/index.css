@@ -1,0 +1,77 @@
+body{
+    background: url("/images&fontes/london-gd44ece10a_1920.jpg") center/cover no-repeat;
+}
+
+
+#app{
+
+    width: 80%;
+    background: url("/images&fontes/galaxie.jpg") center/cover;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.soleil{
+   position: absolute;
+   left: 2rem;
+   width: 5rem;
+   height: 5em;
+}
+.zone{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+    background-color: salmon;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    border: none;border-radius: 10px;
+    text-align: center;
+
+}
+.app-global{
+
+    display: grid;
+    grid-template-areas: 
+    "ville temperature"
+     "vent  humidite"
+    ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+    
+}
+.global{
+    width: 150px;
+    height: 150PX;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: beige;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+.city{
+    grid-area: ville;
+    background-color: rgba(137, 43, 226, 0.315);
+    
+}
+.temp{
+    grid-area:  temperature;
+    background-color: rgba(218, 165, 32, 0.299);
+
+   
+}
+.wind{
+    grid-area: vent;
+    background-color: rgba(218, 165, 32, 0.299);
+    
+}
+.humidity{
+    grid-area: humidite;
+    background-color: rgba(137, 43, 226, 0.315);
+    
+}
