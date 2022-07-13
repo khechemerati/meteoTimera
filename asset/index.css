@@ -6,7 +6,7 @@ body{
 #app{
 
     width: 80%;
-    background: url("/images&fontes/galaxie.jpg") center/cover;
+    background: url("./images&fontes/galaxie.jpg") center/cover;
     margin: auto;
     height: 100vh;
     overflow: hidden;
