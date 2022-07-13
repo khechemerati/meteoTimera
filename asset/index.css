@@ -12,12 +12,51 @@ body{
     overflow: hidden;
     position: relative;
 }
-    @media screen and (max-width:600px) {
-        .zone{
-          font-size: 11rem;
+    @media screen and (max-width: 700px) {
+        
+            .app-global{
+
+                display: grid;
+                grid-template-areas: 
+                "ville "
+                "temperature"
+                 "vent "
+                 "humidite"
+                ;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 5rem;
+
+                
+                
+            }
+
+            .city{
+                grid-area: ville;
+                background-color: rgba(137, 43, 226, 0.315);
+                
+            }
+            .temp{
+                grid-area:  temperature;
+                background-color: rgba(218, 165, 32, 0.299);
+            
+               
+            }
+            .wind{
+                grid-area: vent;
+                background-color: rgba(218, 165, 32, 0.299);
+                
+            }
+            .humidity{
+                grid-area: humidite;
+                background-color: rgba(137, 43, 226, 0.315);
+                
+            }
+
         }
         
-    }
+    
     
 
 .soleil{
